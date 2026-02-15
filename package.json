@@ -1,0 +1,27 @@
+{
+  "name": "@aimasaou/designpattern",
+  "version": "1.0.0",
+  "description": "Multi-AI design pattern generator CLI — Gemini 3 Pro & GLM-5",
+  "type": "module",
+  "bin": {
+    "designpattern": "bin/designpattern.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MASAKASUNO1/designpattern.git"
+  },
+  "keywords": [
+    "gemini",
+    "glm",
+    "design",
+    "html",
+    "cli",
+    "ai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^1",
+    "commander": "^13",
+    "openai": "^4"
+  }
+}

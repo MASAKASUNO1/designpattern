@@ -16,7 +16,12 @@ const SYSTEM_PROMPT = [
 ].join('\n');
 
 function stripCodeBlock(text) {
-  return text.replace(/^```(?:html)?\s*/i, '').replace(/```\s*$/, '').trim();
+  let html = text.replace(/^```(?:html)?\s*/i, '').replace(/```\s*$/, '').trim();
+  const endTag = html.lastIndexOf('</html>');
+  if (endTag !== -1) {
+    html = html.slice(0, endTag + '</html>'.length);
+  }
+  return html.trim();
 }
 
 export async function generateWithGemini(prompt, apiKey, model = DEFAULT_GEMINI_MODEL) {

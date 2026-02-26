@@ -16,7 +16,7 @@ const program = new Command();
 
 program
   .name('designpattern')
-  .description('Multi-AI HTML design generator — Gemini 3 Pro & GLM-5')
+  .description('Multi-AI HTML design generator — Gemini 3.1 Pro & GLM-5')
   .version('1.0.0')
   .hook('preAction', () => {
     console.error(LOGO);

@@ -1,7 +1,7 @@
 {
   "name": "@aimasaou/designpattern",
   "version": "1.0.0",
-  "description": "Multi-AI design pattern generator CLI — Gemini 3 Pro & GLM-5",
+  "description": "Multi-AI design pattern generator CLI — Gemini 3.1 Pro & GLM-5",
   "type": "module",
   "bin": {
     "designpattern": "bin/designpattern.js"
